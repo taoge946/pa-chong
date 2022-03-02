@@ -1,0 +1,54 @@
+﻿<html>
+<head>
+<style type="text/css">
+
+</style>
+<title>css学习</title>>
+</head>
+
+<body style="background-image:url(内容背景.jpg);background-repeat:repeat-y;background-attachment:fixed;background-size:100%;height:100%;">
+css table属性
+		<table border="1px"frame="hsides"rules="rows"width="100%">
+			<tr>
+				<td>属性</td>
+				<td>说明</td>
+			</tr>
+			<tr>
+				<td>border-collapse</td>
+				<td>是否把表格边框合并为单一的边框</td>
+			</tr>
+			<tr>
+				<td>border-spacing</td>
+				<td>设置分隔单元格的距离</td>
+			</tr>
+			<tr>
+				<td>caption-side</td>
+				<td>设置表格标题的位置</td>
+			</tr>
+			<tr>
+				<td>empty-cells</td>
+				<td>设置是否显示表格中空的单元格</td>
+			</tr>
+			<tr>
+				<td>table-layout</td>
+				<td>设置显示单元行和列的算法</td>
+			</tr>
+		</table>
+		<ul>
+		<li>border-collapse属性：默认表示表格具有双线边框，可以通过这个属性使表格变为单线框有以下的值：
+			<br>separate:默认值，边框会分开不会忽略border-spacing和empty-cells属性</li>
+			<br>collapse:边框合并为一个单一的框
+			<br>inheirt:从父元素那里继承
+			<li>border-spacing属性：用于设置或检索当表格边框独立时，行和单元格的边框在横向和纵向上的间距。该属性等同于标签属性cellspacing基本用法border-spacing:length length
+			<br><font color="red">只有在border-collapse的值为separate时才会生效</font>
+			<br>如果两个length全部提供那么第一个作用于横向间距，第二个作用于纵向间距
+			</li>
+		<li>caption-side属性：设置表格的标题在哪一边(bottom/left/right/top)</li>
+		<li>empty-cells属性:设置或检索当表格的单元格无内容时是否显示该单元格<br><font color="red">只有在border-collapse的值为separate时才会生效</font></li>
+		<li>table-layout属性：设置或检索表格的布局算法
+			<br>auto:默认自动布局算法，将基于各单元格的内容。表格在每一个单元格读取计算之后才会显示出来
+			<br>fixed:固定布局的算法,在这个算法中，水平布局仅仅是基于表格的宽度，表格边框的宽度，单元格间距，列的宽度与表格内容无关（表格只和设置的宽度有关）。也就是说内容可能被裁切
+		
+
+</body>
+</html>
